@@ -5,14 +5,18 @@
       "projects": "Projects",
       "experiences": "Experiences",
       "work-with-me": "You want to work with me?",
-      "email-copied": "Email copied"
+      "email-copied": "Email copied",
+      "title": "Web Developer",
+      "description": "French Web developer available for freelancing."
     },
     "fr": {
       "introduction": "Développeur web depuis 2017",
       "projects": "Réalisations",
       "experiences": "Expériences",
       "work-with-me": "Prêt à travailler avec moi ?",
-      "email-copied": "Email copié"
+      "email-copied": "Email copié",
+      "title": "Développeur web",
+      "description": "Développeur web disponible pour des missions freelance."
     }
   }
 </i18n>
@@ -35,6 +39,14 @@ async function copyToClipboard() {
     copied.value = false
   }, 2000)
 }
+const title = computed(() => `Hugo Torzuoli · ${t('title')}`)
+const description = computed(() => t('description'))
+useHead({
+  title,
+  meta: [
+    { name: 'description', content: description },
+  ],
+})
 </script>
 
 <template>
