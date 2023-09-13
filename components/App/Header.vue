@@ -30,14 +30,16 @@ const availableLocales = computed(() => {
     </h1>
     <nav>
       <ul class="space-x-8">
-        <button
-          v-for="l in availableLocales"
-          :key="l.code"
-          class="inline text-gray-400 text-sm hover:underline uppercase"
-          @click="setLocale(l.code)"
-        >
-          {{ l.display }}
-        </button>
+        <li class="inline">
+          <a
+            v-for="l in availableLocales"
+            :key="l.code"
+            class="cursor-pointer text-gray-500 text-sm hover:underline uppercase"
+            @click="setLocale(l.code)"
+          >
+            {{ l.display }}
+          </a>
+        </li>
         <li class="hidden sm:inline text-gray-700 text-sm hover:underline uppercase">
           <a href="#projects">{{ t('projects') }}</a>
         </li>

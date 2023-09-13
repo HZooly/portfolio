@@ -7,7 +7,8 @@
       "work-with-me": "You want to work with me?",
       "email-copied": "Email copied",
       "title": "Web Developer",
-      "description": "French Web developer available for freelancing."
+      "description": "French Web developer available for freelancing.",
+      "project-alt": "Picture of"
     },
     "fr": {
       "introduction": "Développeur web depuis 2017",
@@ -16,7 +17,8 @@
       "work-with-me": "Prêt à travailler avec moi ?",
       "email-copied": "Email copié",
       "title": "Développeur web",
-      "description": "Développeur web disponible pour des missions freelance."
+      "description": "Développeur web disponible pour des missions freelance.",
+      "project-alt": "Photo de"
     }
   }
 </i18n>
@@ -90,7 +92,14 @@ useHead({
         {{ t('projects') }}
       </h2>
       <ul role="list" class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 mt-8">
-        <AppProjectCard v-for="project of projects" :key="project._id" :image="project.image" :link="project.website.link" :personal="project.personal">
+        <AppProjectCard
+          v-for="project of projects"
+          :key="project._id"
+          :image="project.image"
+          :link="project.website.link"
+          :personal="project.personal"
+          :alt="`${t('project-alt')} ${project.name}`"
+        >
           <template #name>
             {{ project.name }}
           </template>
