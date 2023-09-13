@@ -82,7 +82,7 @@ useHead({
         {{ t('projects') }}
       </h2>
       <ul role="list" class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 mt-8">
-        <AppProjectCard v-for="project of projects" :key="project._id" :image="project.image" :link="project.website.link">
+        <AppProjectCard v-for="project of projects" :key="project._id" :image="project.image" :link="project.website.link" :personal="project.personal">
           <template #name>
             {{ project.name }}
           </template>
