@@ -21,9 +21,9 @@ const { t } = useI18n()
 <template>
   <li>
     <div class="group relative aspect-video block w-full overflow-hidden rounded-2xl bg-gray-100">
-      <a :href="props.link" class="absolute inset-0 z-10" target="_blank" rel="noopener noreferrer">
+      <NuxtLink target="_blank" :href="props.link" class="absolute inset-0 z-10">
         <span class="sr-only">Voir le projet</span>
-      </a>
+      </NuxtLink>
       <img :src="props.image" class="pointer-events-none object-cover group-hover:brightness-100 brightness-[.85] transition group-hover:transform group-hover:scale-[1.03] delay-75">
       <div class="absolute bottom-3 left-3 text-white">
         <p class="pointer-events-none mt-2 block truncate text-sm font-medium">

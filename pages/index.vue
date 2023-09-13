@@ -62,16 +62,24 @@ useHead({
           </p>
           <ul class="hidden sm:inline-flex flex-wrap gap-2 text-sm mt-16">
             <li>
-              <a class="hover:underline" href="https://www.linkedin.com/in/hugotorzuoli/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <NuxtLink target="_blank" class="hover:underline" href="https://www.linkedin.com/in/hugotorzuoli/">
+                LinkedIn
+              </NuxtLink>
             </li>
             <li>
-              <a class="hover:underline" href="https://www.malt.fr/profile/hugotorzuoli" target="_blank" rel="noopener noreferrer">Malt</a>
+              <NuxtLink target="_blank" class="hover:underline" href="https://www.malt.fr/profile/hugotorzuoli">
+                Malt
+              </NuxtLink>
             </li>
             <li>
-              <a class="hover:underline" href="https://github.com/hzooly" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <NuxtLink target="_blank" class="hover:underline" href="https://github.com/hzooly">
+                GitHub
+              </NuxtLink>
             </li>
             <li>
-              <a class="hover:underline" href="https://stackoverflow.com/users/4781975/zooly" target="_blank" rel="noopener noreferrer">StackOverflow</a>
+              <NuxtLink target="_blank" class="hover:underline" href="https://stackoverflow.com/users/4781975/zooly">
+                StackOverflow
+              </NuxtLink>
             </li>
           </ul>
         </div>
