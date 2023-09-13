@@ -1,0 +1,8 @@
+{
+  "name": "PandaLab",
+  "period": "2020 - 2022",
+  "large": false,
+  "theme": "pandalab",
+  "role": "Développeur Fullstack",
+  "description": "Développement avec Express, MongoDB, Vue.js et websocket sur différentes applications de santé."
+}

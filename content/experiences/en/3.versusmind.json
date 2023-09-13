@@ -1,0 +1,8 @@
+{
+  "name": "Versusmind",
+  "period": "2018 - 2020",
+  "large": false,
+  "theme": "versusmind",
+  "role": "Fullstack Developer",
+  "description": "Development and maintenance of Dietplus web application with Java Spring Boot et Angular & i18n."
+}
