@@ -97,7 +97,7 @@ useHead({
         {{ t('experiences') }}
       </h2>
       <ul role="list" class="grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-6 gap-y-8 mt-8">
-        <AppExperienceCard v-for="experience of experiences" :key="experience._id" :class="!!experience.large ? 'col-span-2' : 'col-span-2 md:col-auto'" :theme="experience.theme">
+        <AppExperienceCard v-for="experience of experiences" :key="experience._id" :class="!!experience.large ? 'col-span-2' : 'col-span-2 md:col-auto'" :theme="experience.theme" :website="experience.link">
           <template #name>
             {{ experience.name }}
           </template>
