@@ -4,5 +4,6 @@
   "large": false,
   "theme": "pandalab",
   "role": "Développeur Fullstack",
+  "link": "https://www.pandalab.fr",
   "description": "Développement avec Express, MongoDB, Vue.js et websocket sur différentes applications de santé."
 }

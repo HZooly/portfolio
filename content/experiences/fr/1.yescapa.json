@@ -4,5 +4,6 @@
   "large": true,
   "theme": "yescapa",
   "role": "Développeur Frontend Senior",
+  "link": "https://yescapa.fr",
   "description": "Développement et maintenance du site Yescapa, migration Nuxt 2 vers Nuxt 3, participation au Design System avec Tailwind et Figma, déploiement continu CI/CD avec GitLab, multilangue i18n, analyse d'audience avec Google Analytics."
 }

@@ -4,5 +4,6 @@
   "large": false,
   "theme": "versusmind",
   "role": "Fullstack Developer",
+  "link": "https://versusmind.eu/",
   "description": "Development and maintenance of Dietplus web application with Java Spring Boot et Angular & i18n."
 }

@@ -62,16 +62,24 @@ useHead({
           </p>
           <ul class="hidden sm:inline-flex flex-wrap gap-2 text-sm mt-16">
             <li>
-              <a class="hover:underline" href="https://www.linkedin.com/in/hugotorzuoli/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <NuxtLink target="_blank" class="hover:underline" href="https://www.linkedin.com/in/hugotorzuoli/">
+                LinkedIn
+              </NuxtLink>
             </li>
             <li>
-              <a class="hover:underline" href="https://www.malt.fr/profile/hugotorzuoli" target="_blank" rel="noopener noreferrer">Malt</a>
+              <NuxtLink target="_blank" class="hover:underline" href="https://www.malt.fr/profile/hugotorzuoli">
+                Malt
+              </NuxtLink>
             </li>
             <li>
-              <a class="hover:underline" href="https://github.com/hzooly" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <NuxtLink target="_blank" class="hover:underline" href="https://github.com/hzooly">
+                GitHub
+              </NuxtLink>
             </li>
             <li>
-              <a class="hover:underline" href="https://stackoverflow.com/users/4781975/zooly" target="_blank" rel="noopener noreferrer">StackOverflow</a>
+              <NuxtLink target="_blank" class="hover:underline" href="https://stackoverflow.com/users/4781975/zooly">
+                StackOverflow
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -82,7 +90,7 @@ useHead({
         {{ t('projects') }}
       </h2>
       <ul role="list" class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 mt-8">
-        <AppProjectCard v-for="project of projects" :key="project._id" :image="project.image" :link="project.website.link">
+        <AppProjectCard v-for="project of projects" :key="project._id" :image="project.image" :link="project.website.link" :personal="project.personal">
           <template #name>
             {{ project.name }}
           </template>
@@ -97,7 +105,7 @@ useHead({
         {{ t('experiences') }}
       </h2>
       <ul role="list" class="grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-6 gap-y-8 mt-8">
-        <AppExperienceCard v-for="experience of experiences" :key="experience._id" :class="!!experience.large ? 'col-span-2' : 'col-span-2 md:col-auto'" :theme="experience.theme">
+        <AppExperienceCard v-for="experience of experiences" :key="experience._id" :class="!!experience.large ? 'col-span-2' : 'col-span-2 md:col-auto'" :theme="experience.theme" :website="experience.link">
           <template #name>
             {{ experience.name }}
           </template>

@@ -1,6 +1,7 @@
 <script setup>
 const props = defineProps({
   theme: String,
+  website: String,
 })
 
 const theme = computed(() => {
@@ -20,8 +21,10 @@ const theme = computed(() => {
 <template>
   <li class="flex flex-col p-8 rounded-2xl" :class="theme">
     <div class="flex items-center">
-      <h3 class="sm:text-lg font-semibold">
-        <slot name="name" />
+      <h3 class="sm:text-lg font-semibold hover:underline">
+        <NuxtLink :href="website" target="_blank">
+          <slot name="name" />
+        </NuxtLink>
       </h3>
       <span class="text-xs sm:text-sm ml-1.5">(<slot name="period" />)</span>
     </div>
