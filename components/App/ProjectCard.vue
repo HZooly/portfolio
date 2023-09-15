@@ -31,7 +31,6 @@ const { t } = useI18n()
         class="pointer-events-none object-cover group-hover:brightness-100 brightness-[.85] transition group-hover:transform group-hover:scale-[1.03] delay-75"
         :alt="alt"
         :src="props.image"
-        placeholder
         loading="lazy"
       />
       <div class="absolute bottom-3 left-3 text-white">
