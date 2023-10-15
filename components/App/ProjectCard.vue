@@ -27,12 +27,12 @@ const { t } = useI18n()
       <NuxtLink target="_blank" :href="props.link" class="absolute inset-0 z-10">
         <span class="sr-only">{{ t('see-project') }}</span>
       </NuxtLink>
-      <NuxtImg
+      <img
         class="pointer-events-none object-cover group-hover:brightness-100 brightness-[.85] transition group-hover:transform group-hover:scale-[1.03] delay-75"
         :alt="alt"
         :src="props.image"
         loading="lazy"
-      />
+      >
       <div class="absolute bottom-3 left-3 text-white">
         <p class="pointer-events-none mt-2 block truncate text-sm font-medium">
           <slot name="name" />
