@@ -28,7 +28,7 @@ const { t, locale } = useI18n()
 const { data: projects } = await useAsyncData('projects', () => {
   return queryContent('projects').find()
 })
-const { data: experiences } = await useAsyncData('experiences', () => {
+const { data: experiences } = await useAsyncData(`experiences-${locale.value}`, () => {
   return queryContent('experiences', locale.value).find()
 }, {
   watch: [locale],

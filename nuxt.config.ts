@@ -1,12 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@nuxtjs/i18n',
-    '@nuxt/image',
   ],
+  content: {
+    experimental: {
+      clientDB: true,
+    },
+  },
   i18n: {
     baseUrl: 'https://zooly.dev',
     strategy: 'no_prefix',
