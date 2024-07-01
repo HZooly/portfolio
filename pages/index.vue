@@ -1,7 +1,7 @@
 <i18n lang="json">
   {
     "en": {
-      "introduction": "Web developper since 2017",
+      "introduction": "Senior Frontend Engineer {emphasis}",
       "projects": "Projects",
       "experiences": "Experiences",
       "work-with-me": "You want to work with me?",
@@ -11,7 +11,7 @@
       "project-alt": "Picture of"
     },
     "fr": {
-      "introduction": "Développeur web depuis 2017",
+      "introduction": "Senior Frontend Engineer {emphasis}",
       "projects": "Réalisations",
       "experiences": "Expériences",
       "work-with-me": "Prêt à travailler avec moi ?",
@@ -59,27 +59,31 @@ useHead({
           <h2 class="text-4xl uppercase font-bold tracking-tight text-gray-900 sm:text-6xl">
             Hugo Torzuoli
           </h2>
-          <p class="mt-6 sm:text-lg text-gray-800">
-            {{ t('introduction') }}
-          </p>
+          <i18n-t keypath="introduction" tag="p" class="mt-6 sm:text-lg text-gray-800">
+            <template #emphasis>
+              <NuxtLink target="_blank" href="https://yescapa.com">
+                @Yescapa
+              </NuxtLink>
+            </template>
+          </i18n-t>
           <ul class="hidden sm:inline-flex flex-wrap gap-2 text-sm mt-16">
             <li>
-              <NuxtLink target="_blank" class="hover:underline" href="https://www.linkedin.com/in/hugotorzuoli/">
+              <NuxtLink target="_blank" href="https://www.linkedin.com/in/hugotorzuoli/">
                 LinkedIn
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink target="_blank" class="hover:underline" href="https://www.malt.fr/profile/hugotorzuoli">
+              <NuxtLink target="_blank" href="https://www.malt.fr/profile/hugotorzuoli">
                 Malt
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink target="_blank" class="hover:underline" href="https://github.com/hzooly">
+              <NuxtLink target="_blank" href="https://github.com/hzooly">
                 GitHub
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink target="_blank" class="hover:underline" href="https://stackoverflow.com/users/4781975/zooly">
+              <NuxtLink target="_blank" href="https://stackoverflow.com/users/4781975/zooly">
                 StackOverflow
               </NuxtLink>
             </li>

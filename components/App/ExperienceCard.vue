@@ -19,7 +19,7 @@ const theme = computed(() => {
 </script>
 
 <template>
-  <li class="flex flex-col p-8 rounded-2xl" :class="theme">
+  <li class="flex flex-col p-4 md:p-8 rounded-2xl" :class="theme">
     <div class="flex items-center">
       <h3 class="sm:text-lg font-semibold hover:underline">
         <NuxtLink :href="website" target="_blank">

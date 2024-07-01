@@ -12,6 +12,7 @@ export default defineNuxtConfig({
       clientDB: true,
     },
   },
+  css: ['~/assets/css/main.css'],
   i18n: {
     baseUrl: 'https://zooly.dev',
     strategy: 'no_prefix',
