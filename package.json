@@ -19,5 +19,8 @@
     "eslint": "^8.48.0",
     "nuxt": "^3.12.2",
     "typescript": "^5.2.2"
+  },
+  "resolutions": {
+    "string-width": "4.2.3"
   }
 }
