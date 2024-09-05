@@ -6,6 +6,8 @@ const props = defineProps({
 
 const theme = computed(() => {
   switch (props.theme) {
+    case 'directus':
+      return 'bg-[#64f] text-white'
     case 'yescapa':
       return 'bg-[#f4c5d9] text-[#d92465]'
     case 'pandalab':

@@ -1,0 +1,9 @@
+{
+  "name": "Directus",
+  "period": "2024 - aujourd'hui",
+  "large": true,
+  "theme": "directus",
+  "role": "Développeur Frontend",
+  "link": "https://directus.io",
+  "description": "Développement de composants Vue.js & Nuxt 3 pour les produits Directus."
+}

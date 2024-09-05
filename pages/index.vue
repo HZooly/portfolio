@@ -61,8 +61,8 @@ useHead({
           </h2>
           <i18n-t keypath="introduction" tag="p" class="mt-6 sm:text-lg text-gray-800">
             <template #emphasis>
-              <NuxtLink target="_blank" href="https://yescapa.com">
-                @Yescapa
+              <NuxtLink target="_blank" href="https://directus.io">
+                @Directus
               </NuxtLink>
             </template>
           </i18n-t>

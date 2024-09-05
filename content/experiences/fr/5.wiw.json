@@ -1,7 +1,7 @@
 {
   "name": "The WiW",
   "period": "2017 - 2018",
-  "large": true,
+  "large": false,
   "theme": "wiw",
   "role": "Développeur Frontend",
   "link": "https://thewiw.com/",
