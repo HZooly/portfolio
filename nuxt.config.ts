@@ -2,17 +2,21 @@
 export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@nuxtjs/i18n',
   ],
+
   content: {
     experimental: {
       clientDB: true,
     },
   },
+
   css: ['~/assets/css/main.css'],
+
   i18n: {
     baseUrl: 'https://zooly.dev',
     strategy: 'no_prefix',
@@ -31,6 +35,7 @@ export default defineNuxtConfig({
     ],
     vueI18n: './i18n.config.ts',
   },
+
   app: {
     head: {
       link: [
@@ -40,4 +45,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: '2024-12-24',
 })
